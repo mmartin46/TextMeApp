@@ -18,4 +18,4 @@ android devices.
 * **Add Users**: Allows users to add other users.
 * **Search Users**: Allows a filter for searching for specific users.
 ## 4. Screenshots
-![]([https://i.postimg.cc/d3CZCLrm/snaps-0.png](https://i.postimg.cc/HLjfKtMw/snaps-1.png)https://i.postimg.cc/HLjfKtMw/snaps-1.png)
+![](https://i.postimg.cc/d3CZCLrm/snaps-0.png](https://i.postimg.cc/HLjfKtMw/snaps-1.png)https://i.postimg.cc/HLjfKtMw/snaps-1.png)
