@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:gravity="left"
+    android:weightSum="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/senderTextUserIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:scaleType="centerCrop"
+            android:src="@color/primary"
+            app:shapeAppearanceOverlay="@style/circle">
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:minWidth="300dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="0dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/senderSentTextImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    android:src="@drawable/sent_message">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/senderSentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello world"
+                    android:textAlignment="textStart"
+                    android:layout_alignLeft="@id/senderSentTextImage"
+                    android:layout_alignRight="@id/senderSentTextImage"
+                    android:layout_alignTop="@id/senderSentTextImage"
+                    android:layout_alignBottom="@id/senderSentTextImage"
+                    android:gravity="center"
+                    android:paddingHorizontal="60dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/aqua"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/senderTimeSent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingLeft="30dp"
+                android:fontFamily="@font/aqua"
+                android:textColor="@color/secondary"
+                android:textSize="14dp"
+                android:text="Sent at time">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:gravity="end"
+    android:weightSum="1"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:paddingLeft="0dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:minWidth="300dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="0dp"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/receiverSentTextImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    android:src="@drawable/received_message">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/receiverSentText"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hello world"
+                    android:textAlignment="textEnd"
+                    android:layout_toEndOf="@id/receiverSentTextImage"
+                    android:layout_alignLeft="@id/receiverSentTextImage"
+                    android:layout_alignRight="@id/receiverSentTextImage"
+                    android:layout_alignTop="@id/receiverSentTextImage"
+                    android:layout_alignBottom="@id/receiverSentTextImage"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="60dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/aqua"
+                    android:textSize="16sp"
+                    tools:ignore="RtlCompat">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/receiverTimeSent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingRight="30dp"
+                android:fontFamily="@font/aqua"
+                android:textColor="@color/secondary"
+                android:textSize="14dp"
+                android:text="Sent at time">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
