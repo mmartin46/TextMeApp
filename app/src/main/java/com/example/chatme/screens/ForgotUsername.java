@@ -65,17 +65,14 @@ public class ForgotUsername extends BaseActivity {
                 findUserEmail(userEmail, new UserEmailCallback() {
                     @Override
                     public void onUserEmailFound(String username) {
-                        makeToast("Your username was sent to your email", getApplicationContext());
-                        System.out.println(userEmail);
                         // Link the username.
-
                         setUsername(username);
                         if (userEmail != null) {
                             sendEmailAsync(getUsernameEmail(userEmail), new EmailHandler.EmailCallback() {
                                 @Override
                                 public void onEmailSent(boolean success) {
                                     if (success) {
-                                        makeToast("Please check your email for the associated username", getApplicationContext());
+
                                     } else {
                                         makeToast("A problem occurred. Please try again later.", getApplicationContext());
                                     }
@@ -94,7 +91,7 @@ public class ForgotUsername extends BaseActivity {
                         makeToast("Problem locating the email", getApplicationContext());
                     }
                 });
-
+                makeToast("Please check your email for the associated username", getApplicationContext());
             }
         });
     }
