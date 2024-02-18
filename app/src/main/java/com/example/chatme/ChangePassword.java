@@ -7,6 +7,7 @@ import static com.example.chatme.database.Constants.Users.USER_COLLECTION_KEY;
 import static com.example.chatme.security.Hashing.hashPassword;
 import static com.example.chatme.security.Requirements.containsSpace;
 import static com.example.chatme.security.Requirements.hasASpecialSymbol;
+import static com.example.chatme.security.Requirements.hasAlpha;
 import static com.example.chatme.security.Requirements.hasAtLeastTwoNumbers;
 
 import android.content.Intent;
@@ -171,7 +172,12 @@ public class ChangePassword extends BaseActivity {
             return false;
         }
 
+        if (!hasAlpha(password)) {
+            makeToast("Your password needs at least one letter", this);
+            return false;
+        }
 
         return true;
     }
+
 }

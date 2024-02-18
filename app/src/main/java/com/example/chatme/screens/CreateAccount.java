@@ -143,8 +143,7 @@ public class CreateAccount extends BaseActivity {
 
         return true;
     }
-    private boolean isValidPassword() {
-        String password = inputViews.get(Input.WhichText.PASSWORD).getText().toString();
+    private boolean isValidPassword(String password) {
         if (password.length() < Requirements.PASSWORD_MIN_LENGTH) {
             makeToast("Please use at least 10 characters for a password", this);
             return false;
@@ -164,9 +163,7 @@ public class CreateAccount extends BaseActivity {
             return true;
         }
     }
-    private boolean matchingPasswords() {
-        String password = inputViews.get(Input.WhichText.PASSWORD).getText().toString();
-        String confirmPassword = inputViews.get(Input.WhichText.CONFIRM_PASSWORD).getText().toString();
+    private boolean matchingPasswords(String password, String confirmPassword) {
         if (!password.equals(confirmPassword)) {
             makeToast("Passwords do not match", this);
             return false;
@@ -202,7 +199,11 @@ public class CreateAccount extends BaseActivity {
 
 
     private boolean isValidCredentials() {
-        return isValidEmail() && isValidUsername() && isValidPassword() && matchingPasswords() && allowToMainScreen;
+        return isValidEmail() && isValidUsername() &&
+                isValidPassword(inputViews.get(Input.WhichText.PASSWORD).getText().toString()) &&
+                matchingPasswords(inputViews.get(Input.WhichText.PASSWORD).getText().toString(),
+                                    inputViews.get(Input.WhichText.CONFIRM_PASSWORD).getText().toString())
+                            && allowToMainScreen;
     }
 
 
