@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" modified="2024-02-10T15:09:58.604Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="T4tYSpnpwCy8CrDI1sB9" version="23.0.1" type="github">
+  <diagram name="Page-1" id="Y5T6oO2xP4DgUeV4EX9v">
+    <mxGraphModel dx="1218" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-1" value="TextMe&lt;br&gt;App" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="190" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-2" value="Interface Layer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="160" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-3" value="Services Layer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="300" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-5" value="Create&lt;br&gt;Account" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="314" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-6" value="Login" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="319" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-7" value="Forgot&lt;br&gt;Password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="314" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-8" value="Add&lt;br&gt;Users" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="314" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-9" value="Edit&lt;br&gt;Profile" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="410" y="314" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="400" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-12" value="Business Logic Layer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="370" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-13" value="Data&lt;br&gt;Encryption" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="415" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-14" value="User&lt;br&gt;Verification" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="415" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-15" value="Data&lt;br&gt;Fowarding" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="415" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-17" value="Persistent Layer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="470" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-18" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="500" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-20" value="Real-time&lt;br&gt;Updates" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="515" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-21" value="Data&lt;br&gt;Modeling" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="285" y="515" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-22" value="Collections&lt;br&gt;and Documents" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="515" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-24" value="Database Layer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="570" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="600" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="u7sWRhMYhQHZJqrz7Tb5-26" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="95" y="618" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

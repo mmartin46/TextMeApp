@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:gravity="left"
+    android:weightSum="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/recentMessageTextUserIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_icon_frame_1"
+            app:shapeAppearanceOverlay="@style/circle">
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:minWidth="300dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recentMessageUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:fontFamily="@font/aqua"
+                    android:textColor="@color/secondary"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/recentMessageTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello world"
+                    android:fontFamily="@font/aqua"
+                    android:textColor="@color/primary"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recentMessageTextTimeSent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/aqua"
+                android:textColor="@color/secondary"
+                android:textSize="15dp"
+                android:text="Sent at time">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/aqua"
+    android:orientation="vertical"
+    tools:context=".screens.MainScreen">
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/main_bar"
+        android:elevation="20dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_anchorGravity="top"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backToPreviousButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back"
+            android:backgroundTint="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/profileHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/aqua"
+                    android:text="Edit Profile"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/midLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="130dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/bottom"
+            app:layout_constraintTop_toBottomOf="@id/topPanel">
+
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/selectImageText"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aqua"
+                    android:text="Select Profile Image"
+                    android:textAlignment="center"
+                    android:layout_centerInParent="true"
+                    android:elevation="16dp">
+                </TextView>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/selectImage"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle"
+                    android:elevation="1dp"
+                    app:shapeAppearanceOverlay="@style/circle"
+                    >
+                </com.google.android.material.imageview.ShapeableImageView>
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundMode="none"
+                app:boxStrokeColor="@color/primary"
+                app:boxStrokeWidth="3dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/username"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/aqua"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/primary"
+                    android:textColorHint="@color/secondary"
+                    android:textSize="16sp"></com.google.android.material.textfield.TextInputEditText>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:alpha="0.3"
+                    android:background="@drawable/underline"></View>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmEmailTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundMode="none"
+                app:boxStrokeColor="@color/primary"
+                app:boxStrokeWidth="3dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirmEmailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/username"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/aqua"
+                    android:hint="Confirm Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/primary"
+                    android:textColorHint="@color/secondary"
+                    android:textSize="16sp"></com.google.android.material.textfield.TextInputEditText>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:alpha="0.3"
+                    android:background="@drawable/underline"></View>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundMode="none"
+                app:boxStrokeColor="@color/primary"
+                app:boxStrokeWidth="3dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/username"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/aqua"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/primary"
+                    android:textColorHint="@color/secondary"
+                    android:textSize="16sp"></com.google.android.material.textfield.TextInputEditText>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:alpha="0.3"
+                    android:background="@drawable/underline"></View>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmPasswordTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundMode="none"
+                app:boxStrokeColor="@color/primary"
+                app:boxStrokeWidth="3dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirmPasswordText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/username"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="@font/aqua"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/primary"
+                    android:textColorHint="@color/secondary"
+                    android:textSize="16sp"></com.google.android.material.textfield.TextInputEditText>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:alpha="0.3"
+                    android:background="@drawable/underline"></View>
+
+
+                <LinearLayout
+                    android:id="@+id/bottom"
+                    android:paddingTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/submitButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="90dp"
+                        android:background="@color/secondary"
+                        android:fontFamily="@font/aqua"
+                        android:text="Submit"
+                        android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
